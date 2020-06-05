@@ -1,0 +1,25 @@
+{
+  "name": "NLW",
+  "version": "1.0.0",
+  "description": "Learning web development tools such as javascript for future projects.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogerioBento/nlw-ecoleta-js.git"
+  },
+  "keywords": [],
+  "author": "Rogerio Bento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogerioBento/nlw-ecoleta-js/issues"
+  },
+  "homepage": "https://github.com/RogerioBento/nlw-ecoleta-js#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1"
+  }
+}
