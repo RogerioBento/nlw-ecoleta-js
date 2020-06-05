@@ -41,6 +41,8 @@ const itemsToCollect = document.querySelectorAll('.items-grid li')
 for( const item of itemsToCollect) {
     item.addEventListener('click', handleSelectedItem)
 }
+
+
 const collectedItems = document.querySelector('input[name=items]')
 let selectedItems = []
 
@@ -50,6 +52,8 @@ function handleSelectedItem(event) {
     const itemId = itemLi.dataset.id
     itemLi.classList.toggle('selected')
     const alreadySelected = selectedItems.findIndex( item  => {return item == itemId})
+
+    console.log("item id:", itemId)
 
     if(alreadySelected >= 0) {
         const filteredItens = selectedItems.filter( item => {
@@ -63,4 +67,6 @@ function handleSelectedItem(event) {
     }
     
     collectedItems.value = selectedItems
+
+    console.log(selectedItems)
 } 
